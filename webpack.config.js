@@ -17,7 +17,8 @@ module.exports = {
   devServer: {
     contentBase: './dist',
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    public: 'isa-internet-archive.now.sh'
   },
   module: {
     rules: [
