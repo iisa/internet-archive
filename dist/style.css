@@ -33,8 +33,13 @@ iframe {
   margin: 8px auto 16px;
   display: block; }
 
-.home-page, .starter-clicks {
-  margin: 100px auto;
+.starter-clicks {
+  margin: 30px auto; }
+
+.home-page {
+  margin: 100px auto; }
+
+.home-page, starter-clicks {
   text-align: center;
   border-top: 0; }
 
