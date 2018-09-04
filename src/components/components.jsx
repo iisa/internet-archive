@@ -142,23 +142,26 @@ export const Breadcrumbs = ({ info = {} }) => {
     });
   }
 
-  if (info.metadata) {
-    return (
-        <div itemScope itemType="http://data-vocabulary.org/Breadcrumb">
-          <a href="/" itemProp="url"><span itemProp="title">Curious Archive Plucker</span></a>
-          <span> / </span>
-          <span itemScope itemType="http://data-vocabulary.org/Breadcrumb" itemProp="child">
+  let breadcrumbs = info.metadata ? (
+    <div itemScope itemType="http://data-vocabulary.org/Breadcrumb">
+      <a href="/" itemProp="url"><span itemProp="title">Curious Archive Plucker</span></a>
+      <span> / </span>
+      <span itemScope itemType="http://data-vocabulary.org/Breadcrumb" itemProp="child">
             { collectionLinks.reduce((prev, curr) => [[prev, <span> & </span>, curr]]) }
-            <span> / </span>
+        <span> / </span>
             <span itemScope itemScope itemType="http://data-vocabulary.org/Breadcrumb" itemProp="child">
               <a href={`/${metadata.identifier}`} itemProp="url">
                 <span itemProp="title">{ metadata.title }</span>
               </a>
             </span>
           </span>
-        </div>
-    )
-  }
-  return null;
+    </div>
+  ) : null;
+
+  return (
+    <div id="breadcrumbs">
+      { breadcrumbs }
+    </div>
+  )
 
 };
