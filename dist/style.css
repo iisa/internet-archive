@@ -1,0 +1,51 @@
+article {
+  padding-top: 50px; }
+
+h2, h3, h4 {
+  margin: 24px auto;
+  width: 100%; }
+
+iframe {
+  width: 100%; }
+
+.loading, .error {
+  width: 50%;
+  margin: 50px auto; }
+
+section {
+  margin: 16px auto;
+  padding: 32px;
+  border-top: 1px solid lavender; }
+
+.metadata-details strong {
+  display: inline-block;
+  margin-right: 20px; }
+
+.review,
+.star-rating,
+iframe {
+  margin: 8px auto; }
+
+.card-columns {
+  max-width: 900px; }
+
+.card .img-thumbnail {
+  margin: 8px auto 16px;
+  display: block; }
+
+.home-page, .starter-clicks {
+  margin: 50px auto;
+  text-align: center;
+  border-top: 0; }
+
+.home-page form {
+  width: 80%;
+  margin: auto; }
+
+.suggested-thumbs {
+  padding: 20px;
+  overflow: hidden;
+  display: inline-block;
+  border: 1px solid lavender;
+  height: 166px;
+  margin: 8px; }
