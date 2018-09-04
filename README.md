@@ -8,11 +8,18 @@ For a live example, click here: https://isa-internet-archive.now.sh/
 To run this app locally, you will need to:
 
 - clone repo
-- run `npm install`
-
-Option
-- run `node app.js`
+- go into directory
+- in terminal, run `npm install`
+- in terminal, run `node app.js`
 - use browser to go to `http://localhost:3000/`
+
+If you want to dev, in directory:
+- go to `webpack.config.js`,
+- comment out [line 21](https://github.com/iisa/internet-archive/blob/master/webpack.config.js#L21)
+- in terminal, run `npm start`
+
+To run tests:
+- in terminal, go to directory and run `npm run test`
 
 For debugging purposes, I am using:
 - have Node version 8.9.4
