@@ -80,9 +80,7 @@ export const Reviews = ({ reviews = [] }) => {
       }) : <p>No reviews yet</p>}
     </section>
   );
-
-
-}
+};
 
 export const RelatedItems = ({ related, info }) => {
   const mainPageTitle = _.get(info, 'metadata.title', '');
