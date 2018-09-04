@@ -43,8 +43,14 @@ iframe {
   display: block;
 }
 
-.home-page, .starter-clicks {
+.starter-clicks {
+  margin: 30px auto;
+}
+.home-page {
   margin: 100px auto;
+}
+
+.home-page, starter-clicks {
   text-align: center;
   border-top: 0;
 }

@@ -24,22 +24,9 @@ class HomeContainer extends Component {
   render () {
     return (
       <section id="home-page" className="home-page row">
-        <h2 className="welcome-msg text-center">What's inside the archive?</h2>
-        <form>
-          <div className="form-group">
-            <label htmlFor="search-archive">Search the archive</label>
-            <input
-              id="search-archive"
-              type="text"
-              className="form-control"
-              id="search-archive"
-              aria-describedby="search-the-internet-archvie"
-              placeholder="Type file name here" />
-          </div>
-          <button type="submit" className="btn btn-lg btn-info" onClick={this.onClick}>Let's do it.</button>
-        </form>
+        <h2>Plucking items right out of archive.org</h2>
         <div className="starter-clicks col-12">
-          <h5 className="text-center">Don't know where to begin? Check these links out.</h5>
+          <h5 className="text-center">Here are some items I found. Click one and take a look.</h5>
           <Link to={`/160723Drnobenefit_video`} className="suggested-thumbs">
             <img src="https://archive.org/services/img/160723Drnobenefit_video" alt="Click to see more." />
           </Link>
@@ -49,8 +36,8 @@ class HomeContainer extends Component {
           <Link to={`/0577_Logic_by_Machine_15_01_03_00`} className="suggested-thumbs">
             <img src="https://archive.org/services/img/0577_Logic_by_Machine_15_01_03_00" alt="Click to see more." />
           </Link>
-          <Link to={`/BeyoncFormation_201710`} className="suggested-thumbs">
-            <img src="https://archive.org/services/img/BeyoncFormation_201710" alt="Click to see more." />
+          <Link to={`/WORKRIHANNAViolinCover`} className="suggested-thumbs">
+            <img src="https://archive.org/services/img/WORKRIHANNAViolinCover" alt="Click to see more." />
           </Link>
           <Link to={`/JOE2018-09-01.AUD.FLAC`} className="suggested-thumbs">
             <img src="https://archive.org/services/img/JOE2018-09-01.AUD.FLAC" alt="Click to see more." />
@@ -68,6 +55,19 @@ class HomeContainer extends Component {
             <img src="https://archive.org/services/img/jacquespepinsfas00ppin" alt="Click to see more." />
           </Link>
         </div>
+        <form>
+          <div className="form-group">
+            <label htmlFor="search-archive">If you know the specific id of the thing you are looking for, use this: </label>
+            <input
+              id="search-archive"
+              type="text"
+              className="form-control"
+              id="search-archive"
+              aria-describedby="search-the-internet-archvie"
+              placeholder="Type file name here" />
+          </div>
+          <button type="submit" className="btn btn-lg btn-info" onClick={this.onClick}>Let's do it.</button>
+        </form>
       </section>
     )
   }
