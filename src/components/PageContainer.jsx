@@ -16,9 +16,7 @@ class PageContainer extends Component {
     if (window) {
       const { match: { params }, dispatch, info, isFetching, error } = props;
       if (params.identifier && !info && !isFetching && !error) {
-        console.log('getDerivedStateFromProps');
         dispatch(fetchIdentifierInfo(params.identifier));
-        dispatch(fetchRelated(params.identifier))
       }
     }
     return null;
@@ -30,6 +28,10 @@ class PageContainer extends Component {
     if (prevParams.identifier !== params.identifier) {
       dispatch(fetchIdentifierInfo(params.identifier));
       dispatch(fetchRelated(params.identifier))
+    }
+
+    if (!prevProps.info && this.props.info) {
+      dispatch(fetchRelated(params.identifier));
     }
   }
 
