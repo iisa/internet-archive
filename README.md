@@ -9,8 +9,17 @@ To run this app locally, you will need to:
 
 - clone repo
 - go into directory
+
+then,
+
+if you want to use Node:
 - in terminal, run `npm install`
 - in terminal, run `node app.js`
+
+if you want to use Docker:
+- in terminal, execute script `./run-docker.sh`
+
+finally,
 - use browser to go to `http://localhost:3000/`
 
 If you want to dev, in directory:
